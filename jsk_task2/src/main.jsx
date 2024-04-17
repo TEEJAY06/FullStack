@@ -19,8 +19,27 @@ const customStyle = {
 
 customStyle.color = "blue";
 
-var dateToday = new Date().getFullYear();
-console.log(dateToday);
+var dateToday = new Date();
+console.log(dateToday.getFullYear());
+
+var hr = dateToday.getHours();
+
+var greeting = "Good Morning";
+
+var greetingColor = {
+  color: "red",
+};
+
+if (hr < 11) {
+  greeting = "Good Morning";
+  greetingColor.color = "red";
+} else if (hr < 18) {
+  greeting = "Good Afternoon";
+  greetingColor.color = "green";
+} else {
+  greeting = "Good Evening";
+  greetingColor.color = "blue";
+}
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
@@ -32,7 +51,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </h2>
     <p>Your required number is {Math.floor(Math.random() * 9) + 1}</p>
     <p>Created by {firstName + " " + secondName}</p>
-    <p>Copyright {dateToday}</p>
+    <p>Copyright {dateToday.getFullYear()}</p>
 
     <div>
       <img
@@ -50,6 +69,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         src="https://img.etimg.com/thumb/msid-53415495,width-640,height-480,imgsize-72321,resizemode-4/etihad-airways-a380-sheer-luxury-on-air.jpg"
         alt="etihad"
       />
+      <h1 className="heading" style={greetingColor}>
+        {greeting}
+      </h1>
     </div>
   </div>
 
