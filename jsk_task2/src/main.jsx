@@ -24,9 +24,9 @@ console.log(dateToday.getFullYear());
 
 var hr = dateToday.getHours();
 
-var greeting = "Good Morning";
+let greeting;
 
-var greetingColor = {
+greetingColor = {
   color: "red",
 };
 
