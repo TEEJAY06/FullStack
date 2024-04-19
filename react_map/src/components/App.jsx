@@ -54,8 +54,8 @@ function App() {
   // const newNum = nums.findIndex((x) => x > 100);
   // console.log(newNum);
 
-  const res = emojipedia.map((x) => x.meaning.substring(0, 100));
-  console.log(res);
+  // const res = emojipedia.map((x) => x.meaning.substring(0, 100));
+  // console.log(res);
 
   return (
     <div>
