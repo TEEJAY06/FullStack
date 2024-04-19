@@ -14,7 +14,18 @@ function CreateDTerm(emojicon) {
 }
 
 function DList() {
-  return <dl className="dictionary">{emojipedia.map(CreateDTerm)}</dl>;
+  return (
+    <dl className="dictionary">
+      {emojipedia.map((emojicon) => (
+        <DTerm
+          key={emojicon.id}
+          emoji={emojicon.emoji}
+          emojiName={emojicon.name}
+          desc={emojicon.meaning}
+        />
+      ))}
+    </dl>
+  );
 }
 
 export default DList;

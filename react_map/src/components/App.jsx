@@ -11,9 +11,7 @@ function App() {
   //   return x * 2;
   // }
 
-  // const newNums = nums.map(function (x) {
-  //   return x * 2;
-  // });
+  // const newNums = nums.map((x) => x * 2);
 
   // const newNums = [];
   // nums.forEach(function (x) {
@@ -32,13 +30,11 @@ function App() {
   // });
   // console.log(newNums);
 
-  // const newNums = nums.filter(function (x) {
-  //   return x < 10;
-  // });
+  // const newNums = nums.filter((x) => x < 10);
 
   // console.log(newNums);
 
-  // Reduce- Accumulate a value by doing something to each item in an array
+  // REDUCE- Accumulate a value by doing something to each item in an array
 
   // var acc = 0;
 
@@ -46,28 +42,20 @@ function App() {
   //   acc = acc + x;
   // });
 
-  // const newNum = nums.reduce(function (x, acc) {
-  //   return acc + x;
-  // });
+  // const newNum = nums.reduce((x, acc) => acc + x);
   // console.log(newNum);
 
   // FIND- find the first item that matches from an array
 
-  // const newNum = nums.find(function (x) {
-  //   return x > 10;
-  // });
+  // const newNum = nums.find((x) => x > 10);
   // console.log(newNum);
 
   // FINDINDEX- find the index of the first item that matches
-  // const newNum = nums.findIndex(function (x) {
-  //   return x > 100;
-  // });
+  // const newNum = nums.findIndex((x) => x > 100);
   // console.log(newNum);
 
-  // const res = emojipedia.map(function (x) {
-  //   return x.meaning.substring(0, 100);
-  // });
-  // console.log(res);
+  const res = emojipedia.map((x) => x.meaning.substring(0, 100));
+  console.log(res);
 
   return (
     <div>
