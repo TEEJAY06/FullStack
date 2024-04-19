@@ -64,10 +64,10 @@ function App() {
   // });
   // console.log(newNum);
 
-  const res = emojipedia.map(function (x) {
-    return x.meaning.substring(0, 100);
-  });
-  console.log(res);
+  // const res = emojipedia.map(function (x) {
+  //   return x.meaning.substring(0, 100);
+  // });
+  // console.log(res);
 
   return (
     <div>
