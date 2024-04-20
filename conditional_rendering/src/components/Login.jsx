@@ -6,8 +6,6 @@ function Login() {
     <form className="form">
       <Input type="text" placeholder="Username" />
       <Input type="password" placeholder="Password" />
-      {/* <input type="text" placeholder="Username" />
-      <input type="password" placeholder="Password" /> */}
       <button type="submit">Login</button>
     </form>
   );
